@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #333;
+  padding-bottom: 40px;
+}
+.topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 40px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.topo-imagem-perfil img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #0077b6;
+}
+.topo-info-perfil {
+  margin-left: 30px;
+  max-width: 500px;
+}
+.topo-info-perfil h1 {
+  font-size: 2.2rem;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+.topo-info-perfil h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+.topo-info-perfil p {
+  font-size: 1rem;
+  color: #777;
+}
+.social-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0077b6;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #023e8a;
+}
+
+.social-btn svg {
+  fill: #fff;
+}
+
+/* Sobre mim */
+.sobre-mim {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.sobre-mim h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sobre-mim p {
+  margin-bottom: 18px;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Skills */
+.skills-section {
+  padding: 40px 20px;
+  background-color: #e0f0ff;
+}
+
+.skills-section h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #023e8a;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  background-color: #fff;
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: #0077b6;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-4px);
+}
+
+.skill-icon i {
+  font-size: 1.5rem;
+}
+
+/* Estatísticas */
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+
+.stat-item {
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0077b6;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .topo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .topo-info-perfil {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
